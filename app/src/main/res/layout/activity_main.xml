@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.admin.customeviewsapplication.MainActivity">
+
+    <com.example.admin.customeviewsapplication.CustomCircle
+        android:id="@+id/ctmCircle"
+        app:radius="100"
+        app:color="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeRadius"/>
+
+    <com.example.admin.customeviewsapplication.CustomRectangle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctmRectangle"
+        app:r_color="@color/colorPrimary"
+        app:r_height = "100"
+        app:r_width = "300"
+        android:onClick="changeRadius"
+        android:layout_gravity="center" />
+
+    <com.example.admin.customeviewsapplication.CustomEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="My cool edit text" />
+
+    <com.example.admin.customeviewsapplication.CustomLayoutManager
+        android:id="@+id/cstmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
